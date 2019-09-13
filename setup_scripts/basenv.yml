@@ -1,0 +1,9 @@
+name: basenv
+dependencies:
+    - ipykernel
+    - numpy
+    - scipy
+    - pandas
+    - scikit-learn
+    - scikit-image
+    - matplotlib

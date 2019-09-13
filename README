@@ -1,0 +1,17 @@
+The first thing to do is to name the directory that was
+pulled from github as 'core' and put it in your home directory.
+
+1) In your ~/.bash_profile add the line (without the quotes): "export PERSONAL_DIRECTORY=personal"
+2) Run "source ~/.bash_profile"
+3) Install taskwarrior (brew install task)
+4) Execute "task list" in your command line in order for taskwarrior to do its setup.
+5) Make sure that "python" executes to some Python 3 distribution.
+6) Install the following Python package:
+- jsonpath
+- pandas
+- matplotlib
+- taskw
+7) (Assuming you are in ~/core) cd into setup_scripts and run "source initial_setup.sh"
+
+Now we're all set up!
+

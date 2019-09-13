@@ -1,0 +1,42 @@
+This is a task and workflow optimization helper.
+
+The first thing to do is to name the directory that was
+pulled from github as 'core' and put it in your home directory.
+
+Now, you have to have the following installed:
+taskwarrior
+timewarrior
+
+Python3
+
+Python Packages:
+jsonpath
+pandas
+matplotlib
+taskw
+
+If you are using Ubuntu, then the initial_setup.sh should be able
+to install all of these dependencies. (Uncomment the commands as 
+necessary)
+
+In any case, go to the setup_scripts directory and run the initial_setup.sh
+script to create the necessary directories.
+
+You can read the documentation about taskwarrior here: https://taskwarrior.org/
+This project aims to extend the functionality of taskwarrior by adding the 
+ability to take notes and track your goals and habbits as well as produce
+various reports about them.
+
+The following is the functionality of this project:
+python ~/core/task_scripts/goals.py [YYYY-MM-DD] [timeline] -> timelines are: daily/weekly/monthly/quarterly/yearly
+python ~/core/task_scripts/project_note.py [project] [note_name] -> Opens a note for the given project (projects are specified in the taskwarrior with the tag main, and they are given the same value for 'project' and 'description' field)
+python ~/core/task_scripts/project_readme.py [project] -> opens the readme file for the project
+python ~/core/task_scripts/project_min.py -> Opens your minimum daily task document
+python ~/core/task_scripts/start_track.py [target] [min] [max] [up/down] [aggregation] (usual aggregation: mean/sum)
+python ~/core/task_scripts/track.py [target] [date] [value]
+python ~/core/task_scripts/trackplot.py [num_weeks]
+python ~/core/task_scripts/temp_task.py -> opens the temp task document
+python ~/core/task_scripts/report.py -> aggregated your goal documents into a weekly report
+
+
+It is recommended to create aliases for these commands.
